@@ -1,4 +1,4 @@
-const loadTest = document.querySelector('.loading-text');
+const loadText = document.querySelector('.loading-text');
 const bg = document.querySelector('.bg');
 
 let load = 0;
@@ -11,5 +11,6 @@ function blurring() {
   if (load > 99) {
     clearInterval(int);
   }
-  console.log(load);
+
+  loadText.innerText = `${load}%`;
 }
